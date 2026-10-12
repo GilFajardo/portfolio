@@ -91,7 +91,7 @@ const Hero = () => {
 		 
 		 <div className="content bg-black/45 rounded-lg p-4">
 			<div className="space-y-3 md:space-y-5">
-			 <p>Ingeniero en Tecnologáas de la Información</p>
+			 <p>Ingeniero en Tecnologías de la Información</p>
 			 <p className="subtitle">
 				José Gilberto<br /> Fajardo Zapata
 			 </p>

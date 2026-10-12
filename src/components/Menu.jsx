@@ -13,7 +13,7 @@ const Menu = () => {
  
  useGSAP(() => {
 	gsap.fromTo('#title', { opacity: 0 }, { opacity: 1, duration: 1 });
-	gsap.fromTo('.cocktail img', { opacity: 0, xPercent: -100 }, {
+	gsap.fromTo('.cocktail img, .cocktail video', { opacity: 0, xPercent: -100 }, {
 	 xPercent: 0, opacity: 1, duration: 1, ease: 'power1.inOut'
 	})
 	gsap.fromTo('.details h2', { yPercent: 100, opacity: 0 }, {
@@ -96,17 +96,39 @@ const Menu = () => {
 		</div>
 		
 		<div className="cocktail">
-		 <img
-            src={formatImagePath(currentCocktail.image)}
-            alt={currentCocktail.name}
-            className="shot shot-back"
-          />
-		 <img
-            src={formatImagePath(currentCocktail.image2 ?? currentCocktail.image)}
-            alt=""
-            aria-hidden="true"
-            className="shot shot-front"
-          />
+		 {currentCocktail.video ? (
+			<>	
+			<img
+              src={formatImagePath(currentCocktail.image)}
+              alt={currentCocktail.name}
+              className="shot shot-back"
+            />		
+			<video
+              src={formatImagePath(currentCocktail.video)}
+              aria-label={currentCocktail.name}
+              className="shot shot-video"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+			</>
+
+		 ) : (
+			<>
+			 <img
+              src={formatImagePath(currentCocktail.image)}
+              alt={currentCocktail.name}
+              className="shot shot-back"
+            />
+			 <img
+              src={formatImagePath(currentCocktail.image2 ?? currentCocktail.image)}
+              alt=""
+              aria-hidden="true"
+              className="shot shot-front"
+            />
+			</>
+		 )}
 		</div>
 		
 		<div className="recipe">
@@ -118,6 +140,15 @@ const Menu = () => {
 		 <div className="details">
 			<h2>{currentCocktail.title}</h2>
 			<p>{currentCocktail.description}</p>
+			<p>
+			 <a
+              href={currentCocktail.proyecto}
+              target="_blank"
+              rel="noopener noreferrer"
+             >
+              Ver Proyecto
+             </a>
+			</p>
 		 </div>
 		</div>
 	 </div>

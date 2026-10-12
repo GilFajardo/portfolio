@@ -319,16 +319,21 @@ va a aplicar este estilo a las clases y tambien los elementos que contiene*/
         .cocktail {
             @apply relative mt-10 w-full max-w-xs sm:max-w-md xl:max-w-[26rem] 2xl:max-w-[34rem] mx-auto aspect-[6/5];
 
-            img.shot {
+            img.shot,
+            video.shot {
                 @apply absolute object-cover w-[65%] h-[65%] rounded-[2.5rem] shadow-2xl;
             }
 
             img.shot-back {
-                @apply top-0 left-0 z-0;
+                @apply -top-20 -left-20 z-0;
             }
 
             img.shot-front {
                 @apply bottom-0 right-0 z-10;
+            }
+
+            video.shot-video {
+                @apply inset-0 z-10 m-auto;
             }
         }
 

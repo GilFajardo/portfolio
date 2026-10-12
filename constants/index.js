@@ -129,14 +129,17 @@ const allCocktails = [
 	title: "Videjuego Retro Estilo Snake",
 	description:
 	 "Serpiente es un videojuego de consola para Windows inspirado en el juego clásico de la serpiente. Controla a Quetzalcóatl, consigue puntos y responde preguntas sobre deidades mexicas para conservar tus vidas.",
+	proyecto: "https://github.com/GilFajardo/serpiente.git"
  },
  {
 	id: 2,
-	name: "Raspberry Mojito",
-	image: "./images/drink2.png",
-	title: "A Zesty Classic That Never Fails",
+	name: "Algoritmo Round Robin",
+	image: "./images/apache.svg",
+	video: "./videos/algoritmo.mp4",
+	title: "Descubre como funcionan los procesos en Sistemas Operativos.",
 	description:
-	 "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+	 "Simulador de planificación Round Robin (RR) con interfaz gráfica en Java Swing.",
+	proyecto: "https://github.com/GilFajardo/algoritmorr.git"
  },
  {
 	id: 3,
