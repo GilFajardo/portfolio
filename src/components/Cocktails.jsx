@@ -41,7 +41,7 @@ const Cocktails = () => {
 		 <ul>
 			{cockTailLists[0] && (
             <li key="name">
-            <div className= "md: me-28">
+            <div className="md:me-28">
                 <h3>{cockTailLists[0].name}</h3>
                 <p>{cockTailLists[0].country} | {cockTailLists[0].detail}</p>
             </div>
@@ -50,7 +50,7 @@ const Cocktails = () => {
             <h2>Enfoque Profesional:</h2>
             {cockTailLists[1] && (
             <li key="name">
-            <div className= "md: me-28">
+            <div className="md:me-28">
                 <h3>{cockTailLists[1].name}</h3>
                 <p>{cockTailLists[1].detail}</p>
             </div>
@@ -58,7 +58,7 @@ const Cocktails = () => {
             )}
             {cockTailLists[2] && (
             <li key="name">
-            <div className= "md: me-28">
+            <div className="md:me-28">
                 <h3>{cockTailLists[2].name}</h3>
                 <p>{cockTailLists[2].detail}</p>
             </div>
@@ -73,7 +73,7 @@ const Cocktails = () => {
 		 <ul>
 			{mockTailLists[0] && (
             <li key="name">
-            <div className= "md: me-28">
+            <div className="md:me-28">
                 <h3>{mockTailLists[0].name}</h3>
                 <p>{mockTailLists[0].country}</p>
                 <a href="https://www.credly.com/badges/90d817bf-93a0-4130-bd72-9a10e1b7c687/public_url" target="_blank"><p>{mockTailLists[0].detail}</p></a>
@@ -82,7 +82,7 @@ const Cocktails = () => {
             )}
             {mockTailLists[1] && (
             <li key="name">
-            <div className= "md: me-28">
+            <div className="md:me-28">
                 <h3>{mockTailLists[1].name}</h3>
                 <p>{mockTailLists[1].country}</p>
                 <a href="https://www.credly.com/badges/3395f43c-3dde-49d4-b665-bfbe096e4fec/public_url" target="_blank"><p>{mockTailLists[0].detail}</p></a>
@@ -91,7 +91,7 @@ const Cocktails = () => {
             )}
             {mockTailLists[2] && (
             <li key="name">
-            <div className= "md: me-28">
+            <div className="md:me-28">
                 <h3>{mockTailLists[2].name}</h3>
                 <p>{mockTailLists[2].country}</p>
                 <a href="https://www.credly.com/badges/7175cd98-91a0-494b-95cf-eba528d6268d/public_url" target="_blank"><p>{mockTailLists[0].detail}</p></a>

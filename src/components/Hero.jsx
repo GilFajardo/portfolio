@@ -90,7 +90,7 @@ const Hero = () => {
 		 {/* <img src="/images/arrow.png" alt="arrow" className="arrow" /> */}
 		 
 		 <div className="content bg-black/45 rounded-lg p-4">
-			<div className="space-y-5 hidden md:block">
+			<div className="space-y-3 md:space-y-5">
 			 <p>Ingeniero en Tecnologáas de la Información</p>
 			 <p className="subtitle">
 				José Gilberto<br /> Fajardo Zapata
