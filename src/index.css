@@ -304,7 +304,7 @@ va a aplicar este estilo a las clases y tambien los elementos que contiene*/
             @apply flex flex-col justify-between items-center container mx-auto relative;
 
             .arrows {
-                @apply flex items-center justify-between w-full absolute;
+                @apply flex items-center justify-between w-full absolute z-20;
 
                 button {
                     @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;
@@ -325,7 +325,7 @@ va a aplicar este estilo a las clases y tambien los elementos que contiene*/
             }
 
             img.shot-back {
-                @apply -top-20 -left-20 z-0;
+                @apply top-0 left-2 sm:-top-20 sm:-left-20 z-0;
             }
 
             img.shot-front {
