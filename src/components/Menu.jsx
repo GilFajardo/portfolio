@@ -99,13 +99,19 @@ const Menu = () => {
 		 <img
             src={formatImagePath(currentCocktail.image)}
             alt={currentCocktail.name}
-            className="object-contain"
+            className="shot shot-back"
+          />
+		 <img
+            src={formatImagePath(currentCocktail.image2 ?? currentCocktail.image)}
+            alt=""
+            aria-hidden="true"
+            className="shot shot-front"
           />
 		</div>
 		
 		<div className="recipe">
 		 <div ref={contentRef} className="info">
-			<p>Recipe for:</p>
+			<p>Proyecto:</p>
 			<p id="title">{currentCocktail.name}</p>
 		 </div>
 		 

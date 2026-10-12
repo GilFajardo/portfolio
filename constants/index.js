@@ -123,11 +123,12 @@ const socials = [
 const allCocktails = [
  {
 	id: 1,
-	name: "Classic Mojito",
-	image: "./images/drink1.png",
-	title: "Simple Ingredients, Bold Flavor",
+	name: "Serpiente Game",
+	image: "./images/c1.PNG",
+	image2: "./images/c2.png",
+	title: "Videjuego Retro Estilo Snake",
 	description:
-	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+	 "Serpiente es un videojuego de consola para Windows inspirado en el juego clásico de la serpiente. Controla a Quetzalcóatl, consigue puntos y responde preguntas sobre deidades mexicas para conservar tus vidas.",
  },
  {
 	id: 2,

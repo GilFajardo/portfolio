@@ -317,18 +317,26 @@ va a aplicar este estilo a las clases y tambien los elementos que contiene*/
         }
 
         .cocktail {
-            @apply flex-center mt-10;
+            @apply relative mt-10 w-full max-w-xs sm:max-w-md xl:max-w-[26rem] 2xl:max-w-[34rem] mx-auto aspect-[6/5];
 
-            img {
-                @apply object-contain h-[45vh] md:h-[60vh];
+            img.shot {
+                @apply absolute object-cover w-[65%] h-[65%] rounded-[2.5rem] shadow-2xl;
+            }
+
+            img.shot-back {
+                @apply top-0 left-0 z-0;
+            }
+
+            img.shot-front {
+                @apply bottom-0 right-0 z-10;
             }
         }
 
         .recipe {
-            @apply flex max-md:flex-col gap-6 md:gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
+            @apply relative z-20 flex max-md:flex-col gap-6 md:gap-10 md:items-center             justify-between w-full max-md:mt-10 xl:absolute bottom-0;
 
             .info {
-                @apply space-y-4 lg:translate-y-20;
+                            @apply space-y-4 xl:translate-y-20;
 
                 #title {
                     @apply font-dot-gothic md:text-6xl text-3xl text-yellow max-w-40;
