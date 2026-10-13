@@ -1,6 +1,6 @@
 const navLinks = [
  {
-	id: "cocktails",
+	id: "hero",
 	title: "Presentación",
  },
  {
@@ -8,12 +8,12 @@ const navLinks = [
 	title: "Sobre Mí",
  },
  {
-	id: "work",
-	title: "Proyectos",
+	id: "art",
+	title: "Habilidades",
  },
  {
-	id: "contact",
-	title: "Contacto",
+	id: "menu",
+	title: "Proyectos",
  },
 ];
 
@@ -143,19 +143,33 @@ const allCocktails = [
  },
  {
 	id: 3,
-	name: "Violet Breeze",
-	image: "./images/drink3.png",
-	title: "Simple Ingredients, Bold Flavor",
+	name: "Inventario para Farmacia",
+	image: "./images/farmacia1.PNG",
+	image2: "./images/farmacia3.PNG",
+	title: "Sistema de Gestion de Análisis de laboratorio",
 	description:
-	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+	 "Aplicación de consola en C++ para administrar un catálogo de análisis y sus registros de detalle. La interfaz utiliza menús de teclado y guarda la información en archivos locales.",
+	proyecto: "https://github.com/GilFajardo/farmacia.git"
  },
  {
 	id: 4,
-	name: "Curacao Mojito",
-	image: "./images/drink4.png",
-	title: "Crafted With Care, Poured With Love",
+	name: "Eventos Deportivos",
+	image: "./images/apache.svg",
+	video: "./videos/deportivo.mp4",
+	title: "Sistema de Reservaciones para Eventos Deportivos",
 	description:
-	 "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+	 "Aplicacion de escritorio para gestionar la reservacion de boletos y asientos en eventos deportivos. El proyecto esta desarrollado en Java Swing, utiliza MySQL/MariaDB como base de datos y se administra como un proyecto Java SE de NetBeans con Ant.",
+	proyecto: "https://github.com/GilFajardo/EventosDeportivos.git"
+ },
+  {
+	id: 5,
+	name: "ZTS Control",
+	image: "./images/laravel.webp",
+	image2: "./images/ztscontrol.PNG",
+	title: "Sistema de Inventariado para Equipo",
+	description:
+	 "Aplicación web para administrar y consultar la infraestructura y los equipos de la Zona de Transmisión San Luis Potosí. Permite organizar la información por región y subestación, mantener catálogos y consultar la estructura mediante diagramas.",
+	proyecto: ""
  },
 ];
 

@@ -15,7 +15,15 @@ body {
     background-color: black;
     color: white;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+}
+
+/* overflow-x en html y body a la vez crea dos scrollbars; "clip" no crea contenedor de scroll */
+html {
+    overflow-x: clip;
+}
+
+body {
+    overflow-x: clip;
 }
 
 /*
@@ -68,7 +76,7 @@ va a aplicar este estilo a las clases y tambien los elementos que contiene*/
 
 @layer components {
     main {
-        @apply w-full overflow-x-hidden;
+        @apply w-full overflow-x-clip;
     }
 
     nav {
@@ -304,7 +312,7 @@ va a aplicar este estilo a las clases y tambien los elementos que contiene*/
             @apply flex flex-col justify-between items-center container mx-auto relative;
 
             .arrows {
-                @apply flex items-center justify-between w-full absolute z-20;
+                @apply flex items-center justify-between w-full absolute z-20 -translate-y-12;
 
                 button {
                     @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;

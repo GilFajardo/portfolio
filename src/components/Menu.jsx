@@ -41,20 +41,9 @@ const Menu = () => {
  const nextCocktail = getCocktailAt(1);
  
  return (
-	<section id="menu" aria-labelledby="menu-heading">
-	 <img
-        src={`${import.meta.env.BASE_URL}images/slider-left-leaf.png`}
-        alt="left-leaf"
-        id="m-left-leaf"
-      />
-	 <img
-        src={`${import.meta.env.BASE_URL}images/slider-right-leaf.png`}
-        alt="right-leaf"
-        id="m-right-leaf"
-      />
-	 
+	<section id="menu" aria-labelledby="menu-heading">	 
 	 <h2 id="menu-heading" className="sr-only">
-		Cocktail Menu
+		Proyectos
 	 </h2>
 	 
 	 <nav className="cocktail-tabs" aria-label="Cocktail Navigation">
