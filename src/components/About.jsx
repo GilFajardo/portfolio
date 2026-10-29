@@ -29,7 +29,7 @@ const About = () => {
 	 <div className="mb-16">
 		<div className="content">
 		 <div className="md:col-span-8">
-			<p className="badge"><a href="./docs/CV_JoseGilbertoFajardoZapata.pdf" download>Descargar CV</a></p>
+			<p className="badge"><a href="./docs/CV_GilbertoFajardo.pdf" download>Descargar CV</a></p>
 			<h2>
 			 Herramientas e infraestructura para
 				construir Software de alto rendimiento
